@@ -158,7 +158,7 @@ module.exports = function(grunt) {
       },
       sass: {
         files: ['src/**/*.scss'],
-        tasks: ['sass:dev']
+        tasks: ['sass:dev', 'autoprefixer']
       },
       js: {
         files: ['src/js/**/*.js'],
