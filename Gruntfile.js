@@ -170,15 +170,15 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', []);
   grunt.registerTask('build', [
-    'clean',
-    'copy',
-    'babel:prod',
+    'clean', //good to go
+    'copy', //don't need
+    'babel:prod', //good to go
     'bower_concat',
     'jade:prod',
     'sass:prod',
-    'autoprefixer',
-    'uglify',
-    'cssmin'
+    'autoprefixer', // good to go
+    'uglify', //good to go
+    'cssmin' //good to go
   ]);
   grunt.registerTask('build-dev', [
     'clean',
@@ -192,7 +192,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('serve', [
     'build-dev',
-    'connect',
+    'connect', //good to go
     'watch'
   ]);
 
